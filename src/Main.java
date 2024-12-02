@@ -1,6 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Fruit f = new Fruit(5,5,"apple", "KG");
-        System.out.println(f.toString());
+        Fruit apple = new Fruit(250,4.99,"Apple", "KG");
+        apple.setQuantity(apple.getQuantity() - 1);
+        Inventory inventory = new Inventory();
+        inventory.addItem(apple);
+        inventory.showAllItems();
+
     }
 }

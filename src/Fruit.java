@@ -12,17 +12,10 @@ public class Fruit extends Item{
         return quantityUnite;
     }
 
-    public void setQuantityUnite(String quantityUnite) {
-        this.quantityUnite = quantityUnite;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     @Override
     public void displayInfo() {
