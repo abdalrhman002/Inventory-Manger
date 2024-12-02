@@ -1,10 +1,16 @@
 public abstract class Item {
+    private String itemId;
     private int quantity;
     private double price;
 
-    public Item(int quantity, double price) {
+    public Item(String itemId, int quantity, double price) {
+        this.itemId = itemId;
         this.quantity = quantity;
         this.price = price;
+    }
+
+    public String getItemId() {
+        return itemId;
     }
 
     public int getQuantity() {

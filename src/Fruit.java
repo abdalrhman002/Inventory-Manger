@@ -2,8 +2,8 @@ public class Fruit extends Item{
     private String name;
     private String quantityUnite;
 
-    public Fruit(int quantity, double price, String name, String quantityUnite) {
-        super(quantity, price);
+    public Fruit(String itemId, int quantity, double price, String name, String quantityUnite) {
+        super(itemId, quantity, price);
         this.name = name;
         this.quantityUnite = quantityUnite;
     }

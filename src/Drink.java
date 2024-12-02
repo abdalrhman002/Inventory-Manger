@@ -4,9 +4,9 @@ public class Drink extends Item {
     private double volume;
     private String volumeUnite;
 
-    public Drink(int quantity, double price, String brand, String containerType,
+    public Drink(String itemId, int quantity, double price, String brand, String containerType,
                  double volume, String volumeUnite) {
-        super(quantity, price);
+        super(itemId, quantity, price);
         this.brand = brand;
         this.containerType = containerType;
         this.volume = volume;
